@@ -19,15 +19,8 @@ area = ["Cherkasy","Chernihiv","Chernivci","Crimea","Dnipropetrovs'k","Donets'k"
 areaNumber=['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21',
             '22','23','24','25','26','27']
 
-downtime=['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21',
-            '22','23','24','25','26','27']
 Index = ['VCI','TCI','VHI']
-# remov("Download")
-# i=0
-# while i<len(areaNumber):
-#         downtime[i] = download2(areaNumber[i])
-#         i=i+1
-# i=0
+
 df = pd.read_csv('provinces/vhi_id_01.csv',index_col=False, header=1)
 w=df[df['year']==1981]
 print w
